@@ -1,0 +1,54 @@
+.main {
+	background-color: #222;
+	/* height: 100vh; */
+	width: 80vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #1acae9;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Josefin Sans', sans-serif;
+	contain: content;
+}
+
+
+.container{
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* view-timeline-name: --container;
+    view-timeline-axis: block;
+    animation-timeline: --container;
+    animation-name: show;
+    animation-range: entry 25% cover 150%;
+    animation-fill-mode: both; */
+}
+
+
+
+@keyframes show {
+	to{
+		opacity: 2;
+
+		
+		/* scale: 10%; */
+		/* margin-top: 1000px; */
+		/* margin-left: -500px; */
+		
+	}
+	from{
+		opacity: 2;
+		/* scale: 100%; */
+		/* margin-top: -1000px; */
+
+		/* margin-left: 500px; */
+		
+
+	}
+}

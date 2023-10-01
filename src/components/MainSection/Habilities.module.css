@@ -1,0 +1,10 @@
+.main{
+    background-color: #292929;
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1acae9;
+
+}
