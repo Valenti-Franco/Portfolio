@@ -12,7 +12,15 @@
 	align-items: center;
 	font-family: 'Josefin Sans', sans-serif;
 	contain: content;
+    margin: 50px;
+
 }
+.main h2 {
+	color: #1acae9;
+    font-size: 60px;
+
+}
+
 
 
 .container{
@@ -35,6 +43,7 @@
 @keyframes show {
 	to{
 		opacity: 2;
+		transform: translateY(-700px)
 
 		
 		/* scale: 10%; */
@@ -44,6 +53,8 @@
 	}
 	from{
 		opacity: 2;
+		transform: translateY(1000px)
+
 		/* scale: 100%; */
 		/* margin-top: -1000px; */
 
@@ -52,3 +63,40 @@
 
 	}
 }
+
+
+
+@media screen  and (max-width: 1600px) {
+    /* Estilos para pantallas entre 1281px y 1600px */
+   
+    .main{
+        height: auto; 
+    }
+    .container{
+        margin: 0px;
+    }
+  }
+
+  @media screen  and (max-width: 1280px) {
+    .main{
+        width: 100vw;
+		
+    }
+  .container{
+	width: 95%;
+  }
+.desc{
+	padding: 7px 15px;
+    font-size: 18px;
+}
+   
+    /* Estilos para tabletas en modo paisaje */
+  }
+  @media screen  and (max-width: 767px) {
+    /* Estilos para dispositivos móviles de tamaño mediano (por ejemplo, teléfonos) */
+  
+  }
+
+  @media screen and (max-width: 374px) {
+    /* Estilos para dispositivos móviles pequeños (por ejemplo, teléfonos más pequeños) */
+  }

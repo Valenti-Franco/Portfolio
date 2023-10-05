@@ -26,6 +26,11 @@
     animation-range: entry 25% cover 150%;
     animation-fill-mode: both;
 	padding: 5vw;
+	background: linear-gradient(124deg, rgba(0,0,0,1) 2%, rgba(172, 249, 255, 0.63) 11%, rgba(88,218,228,0.3090765449438202) 39%, rgba(17, 41, 43, 0.712) 56%, rgba(0,0,0,0.5955933988764045) 61%, rgba(0,0,0,0) 70%),
+    url('src/assets/YO.png') right no-repeat;
+background-size: contain;
+
+
 }
 .icons{
 	display: flex;
@@ -65,7 +70,30 @@
     text-transform: inherit;
 }
 
+.img{
+	height: 100%;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
 
+
+	/* border-radius: 50%; */
+	
+
+
+	
+}
+.containerImg{
+	
+	/* position: absolute; */
+	display: flex;
+	justify-Content: center;
+	width: 100%;
+	height: 100%;
+	
+	
+}
 
 .f{
     transform: unset;
@@ -80,20 +108,50 @@
 
 @keyframes show {
 	to{
-		opacity: 0.1;
+		opacity: 0.01;
 		
 		/* scale: 10%; */
-		/* margin-top: 1000px; */
-		margin-left: -500px;
+		margin: 0px;
+		transform: translateY(-700px)
+
+		/* x: 4vw; */
 		
 	}
 	from{
 		opacity: 2;
+		transform: translateY(700px)
+
+		/* position: relative; */
+
 		/* scale: 100%; */
 		/* margin-top: -1000px; */
 
-		margin-left: 500px;
+		/* x: -3.vw; */
 		
 
+	}
+}
+
+
+
+
+@media screen  and (max-width: 1280px) {
+    .main{
+        width: 100vw;
+		
+    }
+}
+
+@media screen  and (max-width: 767px) {
+	.main{
+		height: 135vh;
+	}
+	.container{
+		height: 70vh;
+    display: flex;
+    width: 100%;
+	}
+	.text{
+		transform: translateY(-350px);
 	}
 }

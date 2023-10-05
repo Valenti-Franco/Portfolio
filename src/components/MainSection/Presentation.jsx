@@ -60,7 +60,7 @@ function MainSectionPresentation() {
 		cycleAnimation()
 	}, [svgControls, pathControls])
 	return (
-		<main className={style.main}>
+		<main id='inicio' className={style.main}>
 			<div className={style.container}>
 				<div ref={ref} className={style.text}>
 					<p>
@@ -794,13 +794,8 @@ function MainSectionPresentation() {
 									</a>
 								</section>
 							</motion.strong>
-							<div
-								style={{
-									display: 'flex',
-									justifyContent: ' center',
-								}}
-							>
-								<motion.img
+							{/* <div className={style.containerImg}>
+								<motion.div
 									transition={{ duration: 0.3 }}
 									variants={{
 										hidden: {
@@ -809,19 +804,26 @@ function MainSectionPresentation() {
 											// rotateZ: '-100',
 											fill: '#fff',
 											background: '#222',
-											borderRadius: '50%',
+
 											padding: '1px',
 											border: '1px solid rgb(255, 255, 255)',
 										},
-										visible: { opacity: 1, x: 0, rotateZ: 0 },
+										visible: {
+											opacity: 1,
+											x: 0,
+											rotateZ: 0,
+											backgroundImage: "url('src/assets/YO.png')",
+											backgroundPosition: 'center',
+											backgroundSize: 'cover',
+											backgroundRepeat: 'no-repeat',
+										},
 									}}
-									style={{ maxWidth: '' }}
+									className={style.img}
 									initial='hidden'
 									animate='visible'
-									src='https://cdn.icon-icons.com/icons2/626/PNG/512/old-man-black-face-emoticon-with-mustache-and-one-vintage-circular-eyeglass_icon-icons.com_57447.png'
 									alt=''
 								/>
-							</div>
+							</div> */}
 						</div>
 					</p>
 				</div>
